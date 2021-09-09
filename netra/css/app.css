@@ -1,0 +1,159 @@
+@import "../css/owl.carousel.min.css";
+
+/* css variables */
+
+ :root {
+    --textFormat: upperCase;
+    --effect: all .8s linear;
+    --space: .1rem;
+    --weight: 600;
+    /* start default theme */
+    --primaryCol: #101098bd;
+    --secondaryCol: rgb(127, 19, 228);
+    --colorOne: #ffffff;
+    --colorTwo: #000000;
+    --colorThree: #808080;
+    /* end default theme */
+}
+
+
+/* global css */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    list-style: none!important;
+    text-decoration: none!important;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+
+/* 
+body {
+    background: #999;
+} */
+
+
+/* start preloader */
+
+.preloadContainer {
+    background: var(--colorTwo);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.preloader {
+    background-image: url(../img/preloader/preloader.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* end preloader */
+
+
+/* start  header*/
+
+header {
+    padding: 1rem 0;
+    color: var(--colorOne);
+    background: var(--primaryCol);
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fa-cloud-upload-alt {
+    animation: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+/* end  header*/
+
+
+/* start upload image */
+
+.view {
+    background: #9999990f;
+}
+
+.custom-file input[type="file"] {
+    display: none;
+}
+
+.custom-file label {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    color: #fff;
+    background: var(--primaryCol);
+    border-radius: 5px;
+}
+
+.imagDrag {
+    width: 100%;
+    height: 400px;
+}
+
+.anylize {
+    text-align: center;
+    /* padding: 2rem 0; */
+}
+
+.imagContain {
+    box-shadow: 1px 3px 5px 2px #999;
+}
+
+.imgHead {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #131212;
+}
+
+
+/* start upload image */
+
+
+/* start table */
+
+table {
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px #999999b8;
+}
+
+table tr td {
+    border: solid thin #ddd;
+    padding: 1rem;
+    font-size: .9rem;
+}
+
+table tr th {
+    border: solid thin #ddd;
+    /* padding: 5px; */
+    padding: 1rem;
+    background: var(--primaryCol);
+    color: #fff;
+}
